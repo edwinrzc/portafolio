@@ -24,10 +24,11 @@ class bannerUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'imagen' => 'image',
+            'imagen' => 'required|mimes:jpg,jpeg,bmp,png',
             'titulo' => 'required',
             'subtitulo' => 'required',
-            'tituloboton'=>'required|max:20'
+            'tituloboton'=>'required|max:20',
+            'status'=>'integer'
         ];
     }
 }

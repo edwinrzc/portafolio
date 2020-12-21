@@ -7,7 +7,7 @@
 
     <div class="panel-body">
         <h3 class="text-center m-t-0 m-b-15">
-            <a href="index.html" class="logo logo-admin"><span>Web</span>Admin</a>
+            <a href="index.html" class="logo logo-admin"><span>ReeWeb</span>Admin</a>
         </h3>
         <h4 class="text-muted text-center m-t-0"><b>Sign In</b></h4>
 
@@ -43,14 +43,14 @@
                 </div>
             </div>
 
-            <div class="form-group m-t-30 m-b-0">
+            <!-- div class="form-group m-t-30 m-b-0">
                 <div class="col-sm-7">
                     <a href="pages-recoverpw.html" class="text-muted"><i class="fa fa-lock m-r-5"></i> Forgot your password?</a>
                 </div>
                 <div class="col-sm-5 text-right">
                     <a href="pages-register.html" class="text-muted">Create an account</a>
                 </div>
-            </div>
+            </div> -->
         </form>
     </div>
 

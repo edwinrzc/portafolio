@@ -8,6 +8,7 @@ use App\Http\Requests\RolesRequest;
 use App\Role;
 use App\Http\Requests\UpdateRoleRequest;
 use App\Item;
+use App\User;
 
 class RoleController extends Controller
 {
@@ -92,6 +93,7 @@ class RoleController extends Controller
     public function assigned($id)
     {
         //
+        //$user = User::findOrFail($id);
         $role = Role::findOrFail($id);
         $items = Item::all();
         return view('roles.assigned', compact('role','items'));

@@ -50,6 +50,9 @@
                                                       	<a href="{{ route('banner.preview', $banner->id) }}" title="Vista Previa" class="btn btn-default" >
                                                       		<i class="fa fa-eye" aria-hidden="true"></i>
                                                       	</a>
+                                                      	<a href="{{ route('banner.crop', $banner->id) }}" title="Ajustar Imagen" class="btn btn-default" >
+                                                      		<i class="fa fa-crop" aria-hidden="true"></i>
+                                                      	</a>
                                                     </td>
                                                 </tr>
                                         	@endforeach                                        

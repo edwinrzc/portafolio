@@ -3,7 +3,7 @@
 
         <div class="user-details">
             <div class="text-center">
-                <img src="/assets/images/users/avatar-1.jpg" alt="" class="img-circle">
+                <img src="/assets/images/users/logo.jpeg" alt="" class="img-circle">
             </div>
             <div class="user-info">
                 <div class="dropdown">
@@ -29,7 +29,7 @@
         <div id="sidebar-menu">
             <ul>
                 <li>
-                    <a href="{{ route('index') }}" class="waves-effect"><i class="mdi mdi-home"></i><span>Inicio</span></a>
+                    <a href="{{ route('panel') }}" class="waves-effect"><i class="mdi mdi-home"></i><span>Inicio</span></a>
                 </li>
 				@if(auth()->user()->isSuperAdmin() or auth()->user()->onlyPermited( collect(['ADMIN-USER','ADMIN-BASIC']) ))
                 <li class="has_sub">
@@ -45,13 +45,10 @@
 				<li class="has_sub">
                     <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cloud-upload"></i> <span> Backed </span> <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
                     <ul class="list-unstyled">
+                        <li><a href="{{ route('equipotrabajo.index') }}">Equipo de Trabajo</a></li>
                         <li><a href="{{ route('banner.index') }}">Banner</a></li>
-                    </ul>
-                </li>
-                <li class="has_sub">
-                    <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-cloud-upload"></i> <span> Importaciones </span> <span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
-                    <ul class="list-unstyled">
-                        <li><a href="{{ route('importacion.index') }}">Deudas</a></li>
+                        <li><a href="{{ route('servicio.index') }}">Servicios</a></li>
+                        <li><a href="{{ route('portafolio.index') }}">Portafolio</a></li>
                     </ul>
                 </li>
             </ul>

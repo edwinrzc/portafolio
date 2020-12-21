@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Banner;
+use App\Servicio;
+use App\Portafolio;
+use App\EquipoTrabajo;
 
 class SiteController extends Controller
 {
@@ -22,7 +26,11 @@ class SiteController extends Controller
     public function index()
     {
         //
-        return view('site.index2');
+        $banner = Banner::where('status', '=', '1')->firstOrFail();
+        $servicios = Servicio::where('status','=','1')->get();
+        $portafolios = Portafolio::where('status','=','1')->get();
+        $equipo = EquipoTrabajo::all(); 
+        return view('site.index2',compact('banner','servicios','portafolios','equipo'));
     }
     
     /**
@@ -33,39 +41,13 @@ class SiteController extends Controller
     public function admin()
     {
         //
-        return view('site.index');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     
-    public function store(Request $request)
-    {
-       // 
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     
-    public function show($id)
-    {
-        //
+        if(auth()->check())
+        {
+            return view('site.index');
+        }
+        
+        return redirect()->back();
+        
     }
 
     /**
@@ -80,26 +62,5 @@ class SiteController extends Controller
         return view('site.index');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     
-    public function destroy($id)
-    {
-        //
-    }*/
+    
 }

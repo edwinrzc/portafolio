@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Agency - Start Bootstrap Theme</title>
+    <title>Portafolio - ReeWebs</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +37,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <span class="copyright">Copyright &copy; Your Website 2018</span>
+            <span class="copyright">Copyright &copy; <a href="http://reewebs.com">Reewebs.com</a> 2020</span>
           </div>
           <div class="col-md-4">
             <ul class="list-inline social-buttons">
@@ -260,7 +260,9 @@
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="/assets/images/img/portfolio/06-full.jpg" alt="">
+                  <img width="20%" class="img-fluid mx-auto" src="{{ asset('/assets/images/img/portfolio/06-full.jpg') }}" alt="">
+                  <img width="20%" class="img-fluid mx-auto" src="{{ asset('/assets/images/img/portfolio/06-full.jpg') }}" alt="">
+                  <img width="20%" class="img-fluid mx-auto" src="{{ asset('/assets/images/img/portfolio/06-full.jpg') }}" alt="">
                   <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
                   <ul class="list-inline">
                     <li>Date: January 2017</li>
@@ -290,8 +292,8 @@
     <script src="/js/contact_me.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="/js/agency.min.js"></script>
-
+    <script src="/js/agency.js"></script>
+	@yield('scripts')
   </body>
 
 </html>

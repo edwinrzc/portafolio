@@ -31,13 +31,13 @@ class UsuariosTableSeeder extends Seeder
         ]);
         
         
-//         $role = Role::create([
-//             'name'=>'ADMIN-USER',
-//             'description'=>'Administrador del sistema'
-//         ]);
+         $role = Role::create([
+             'name'=>'ADMIN-USER',
+             'description'=>'Administrador del sistema'
+         ]);
         
         
-//         $user->roles()->save($role);
+         $user->roles()->save($role);
         
     }
 }

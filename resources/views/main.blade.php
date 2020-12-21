@@ -50,7 +50,7 @@
                  <!-- content -->
 
                 <footer class="footer">
-                     © 2018 Portafolio - All Rights Reserved.
+                     © 2020 ReeWeb - All Rights Reserved.
                 </footer>
 
             </div>
@@ -63,6 +63,7 @@
         <!-- jQuery  -->
         <script src="/assets/js/jquery.min.js"></script>
         <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="/js/bootbox.min.js"></script>
         <script src="/assets/js/modernizr.min.js"></script>
         <script src="/assets/js/detect.js"></script>
         <script src="/assets/js/fastclick.js"></script>
@@ -91,15 +92,16 @@
         <script src="/assets/plugins/datatables/dataTables.scroller.min.js"></script>
         
         
-        <!--Morris Chart-->
+        <!--Morris Chart
         <script src="/assets/plugins/morris/morris.min.js"></script>
-        <script src="/assets/plugins/raphael/raphael-min.js"></script>
+        <script src="/assets/plugins/raphael/raphael-min.js"></script>-->
         <!-- Bootstrap File Style -->
         <script src="/assets/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js" type="text/javascript"></script>
 
-        <script src="/assets/pages/dashborad.js"></script>
+        <!-- script src="/assets/pages/dashborad.js"></script> -->
 
         <script src="/assets/js/app.js"></script>
+        
 		<script type="text/javascript">
 		
 			$(document).ready(function()
@@ -109,6 +111,7 @@
 
 			
         	@yield('javascript')
-        </script>	
+        </script>
+        @yield('javascript2')	
     </body>
 </html>

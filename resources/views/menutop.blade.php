@@ -2,8 +2,8 @@
     <!-- LOGO -->
     <div class="topbar-left">
         <div class="text-center">
-            <a href="{{ route('index') }}" class="logo"><span>Web</span>Admin</a>
-            <a href="{{ route('index') }}" class="logo-sm"><span>W</span></a>
+            <a href="{{ route('panel') }}" class="logo"><span>ReeWeb</span>-Admin</a>
+            <a href="{{ route('panel') }}" class="logo-sm"><span>RW</span></a>
             <!--<a href="index.html" class="logo"><img src="assets/images/logo_white_2.png" height="28"></a>-->
             <!--<a href="index.html" class="logo-sm"><img src="assets/images/logo_sm.png" height="36"></a>-->
         </div>
@@ -77,7 +77,7 @@
                     <li class="dropdown">
                     	@if (auth()->check())
                         <a href="" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
-                            <img src="/assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle">
+                            <img src="/assets/images/users/logo1.jpeg" alt="user-img" class="img-circle">
                             <span class="profile-username">
                                 {{ auth()->user()->getFullName() }} 
                             </span>
@@ -92,7 +92,7 @@
 <!--                         </ul> -->
                         @else
                         <a href="/login" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
-                            <img src="/assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle">
+                            <img src="/assets/images/users/logo1.jpeg" alt="user-img" class="img-circle">
                             <span class="profile-username">
                                 Login
                             </span>

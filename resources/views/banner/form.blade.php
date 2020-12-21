@@ -50,6 +50,17 @@
                                             </div>
                                             
                                             <div class="form-group">
+                                                <label>Estado</label>
+                                                
+												<select class="form-control" name="status" >
+                                                    <option value="1">Activo</option>
+                                                    <option value="0">Inactivo</option>
+                                                    <option value="2">Pausado</option>
+                                                </select>
+                                                {{ $errors->first('status') }}
+                                            </div>
+                                            
+                                            <div class="form-group">
                                                 <div>
                                                     <a href="{{ route('banner.index') }}" class="btn btn-default waves-effect m-l-5" >
                                                     	Volver

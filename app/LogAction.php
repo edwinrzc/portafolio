@@ -36,7 +36,9 @@ class LogAction extends Model
         $this->request = json_encode($request);
         $this->ip_address = Request::ip();
         
-        $this->save();        
+        $this->save();  
+        
+        return $this;
     }
     
     

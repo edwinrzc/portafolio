@@ -44,6 +44,17 @@
                                                 {{ $errors->first('tituloboton') }}
                                             </div>
                                             
+                                            <div class="form-group">
+                                                <label>Estado</label>
+                                                
+												<select class="form-control" name="status" >
+                                                    <option value="1">Activo</option>
+                                                    <option value="0">Inactivo</option>
+                                                    <option value="2">Pausado</option>
+                                                </select>
+                                                {{ $errors->first('status') }}
+                                            </div>
+                                            
                                             <div class="form-group m-b-10">
                                                 <p>Imagen</p>
                                                 <input type="file" class="filestyle" name="imagen" data-buttonname="btn-primary">

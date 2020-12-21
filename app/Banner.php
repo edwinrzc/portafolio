@@ -8,5 +8,5 @@ class Banner extends Model
 {
     //
     
-    protected $fillable = ['titulo','subtitulo','tituloboton','imagen'];
+    protected $fillable = ['titulo','subtitulo','tituloboton','imagen','status'];
 }
